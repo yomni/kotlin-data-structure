@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "io.yomni"
-version = "1.0-SNAPSHOT"
+version = "1"
 
 repositories {
     mavenCentral()
@@ -11,6 +11,9 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine")
+    testImplementation("org.assertj:assertj-core:3.19.0")
 }
 
 tasks.test {
