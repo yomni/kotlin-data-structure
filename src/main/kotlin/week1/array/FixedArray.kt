@@ -1,7 +1,8 @@
-package io.yomni.week1.array
+package week1.array
 
-interface Array<T> {
+interface FixedArray<T> {
     val size: Int
     fun get(index: Int): T
     fun set(index: Int, value: T)
+    fun search(value: T): Int
 }
